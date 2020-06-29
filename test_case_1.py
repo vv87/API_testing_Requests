@@ -1,9 +1,9 @@
 import requests
 
+url = 'https://api.github.com'
+r = requests.get(url)
 
-r = requests.get('https://api.github.com')
-
-assert r.status_code == 200, ("No search results!")
+assert r.status_code == 200, ("Response code is not 200")
 assert 'current_user_url' in r.json()
 
-print(r.json())
+print(r.status_code, '\n', r.json())
