@@ -1,10 +1,10 @@
-import requests
 import json
+import requests
 import jsonpath
 
 
 # API URL
-url = "https://reqres.in/api/users?page=2"
+URL = "https://reqres.in/api/users?page=2"
 
 # Send Get Request
 response = requests.get(url)
