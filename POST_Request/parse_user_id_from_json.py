@@ -2,6 +2,7 @@ import requests
 import json
 import jsonpath
 
+
 # API URL
 url = "https://reqres.in/api/users"
 path_to_json_file = 'F:\\PythonProjects\\Requests_2\\POST_Request\\create_user_data.json'
@@ -25,5 +26,3 @@ response_json = json.loads(response.text)
 # Pick id using json path
 id = jsonpath.jsonpath(response_json, 'id')
 print(id[0])
-
-
