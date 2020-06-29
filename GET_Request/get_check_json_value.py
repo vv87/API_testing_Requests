@@ -7,7 +7,7 @@ import jsonpath
 URL = "https://reqres.in/api/users?page=2"
 
 # Send Get Request
-response = requests.get(url)
+response = requests.get(URL)
 
 # Parse response to Json format
 json_response = json.loads(response.text)

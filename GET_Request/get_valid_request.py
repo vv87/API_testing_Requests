@@ -20,4 +20,4 @@ response = requests.get(not_valid_url)
 if response.status_code != 200:
     print(response.status_code)
 
-assert response.status_code == 200, 'Response code is not "200"!'
+assert response.status_code == 404, 'Response code is not "404"!'
