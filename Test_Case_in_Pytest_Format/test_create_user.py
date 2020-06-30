@@ -10,7 +10,7 @@ url = "https://reqres.in/api/users"
 @pytest.mark.regression
 def test_create_new_user():
     path_to_json_file = '/var/lib/jenkins/workspace/Api_tests/GET_Request/POST_Request/create_user_data.json'
-    # path_to_json_file = 'F:\\PythonProjects\\Requests_2\\schema.json'
+    # path_to_json_file = 'F:\\PythonProjects\\Requests_2\\POST_Request\\create_user_data.json'
     file = open(path_to_json_file, 'r')
     json_input = file.read()  # Read input json file
     request_json = json.loads(json_input)
@@ -21,7 +21,7 @@ def test_create_new_user():
 @pytest.mark.regression
 def test_create_other_user():
     path_to_json_file = '/var/lib/jenkins/workspace/Api_tests/GET_Request/POST_Request/create_user_data.json'
-    # path_to_json_file = 'F:\\PythonProjects\\Requests_2\\schema.json'
+    # path_to_json_file = 'F:\\PythonProjects\\Requests_2\\POST_Request\\create_user_data.json'
     file = open(path_to_json_file, 'r')
     json_input = file.read()  # Read input json file
     request_json = json.loads(json_input)
@@ -35,7 +35,7 @@ def test_create_other_user():
 @pytest.mark.regression
 def test_create_new_user2():
     path_to_json_file = '/var/lib/jenkins/workspace/Api_tests/GET_Request/POST_Request/create_user_data.json'
-    # path_to_json_file = 'F:\\PythonProjects\\Requests_2\\schema.json'
+    # path_to_json_file = 'F:\\PythonProjects\\Requests_2\\POST_Request\\create_user_data.json'
     file = open(path_to_json_file, 'r')
     json_input = file.read()  # Read input json file
     request_json = json.loads(json_input)
@@ -45,8 +45,8 @@ def test_create_new_user2():
 
 @pytest.mark.smoke
 def test_create_other_user2():
-    path_to_json_file = '/var/lib/jenkins/workspace/Api_tests/GET_Request/POST_Request/create_user_data.json'
-    # path_to_json_file = 'F:\\PythonProjects\\Requests_2\\schema.json'
+    # path_to_json_file = '/var/lib/jenkins/workspace/Api_tests/GET_Request/POST_Request/create_user_data.json'
+    path_to_json_file = 'F:\\PythonProjects\\Requests_2\\POST_Request\\create_user_data.json'
     file = open(path_to_json_file, 'r')
     json_input = file.read()  # Read input json file
     request_json = json.loads(json_input)
