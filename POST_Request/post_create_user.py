@@ -3,7 +3,8 @@ import json
 
 # API URL
 url = "https://reqres.in/api/users"
-path_to_json_file = '/var/lib/jenkins/workspace/Api_tests/GET_Request/POST_Request/create_user_data.json'
+# path_to_json_file = '/var/lib/jenkins/workspace/Api_tests/GET_Request/POST_Request/create_user_data.json'
+path_to_json_file = 'F:\\PythonProjects\\Requests_2\\schema.json'
 
 # Read input json file
 file = open(path_to_json_file, 'r')

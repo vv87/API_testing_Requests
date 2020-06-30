@@ -13,17 +13,15 @@ file = open(path_to_json_file, 'r')
 json_input = file.read()
 request_json = json.loads(json_input)
 
-# Make POST request with json input body
-response = requests.post(url, request_json)
+# Make PUT request with json input body
+response = requests.put(url, request_json)
 
-assert response.status_code == 201, 'Response code is not "201"!'
+# Validation Response Code
+assert response.status_code == 200, 'Response code is not "200"!'
 
-# Parse Content-Length from response header
-print(response, '\nContent-Length:', response.headers.get('Content-Length'))
-
-# Parse response to json format
+# Parse response Content
 response_json = json.loads(response.text)
 
 # Pick id using json path
-id = jsonpath.jsonpath(response_json, 'id')
-print(id[0])
+updatedAt = jsonpath.jsonpath(response_json, 'updatedAt')
+print(updatedAt[0])
