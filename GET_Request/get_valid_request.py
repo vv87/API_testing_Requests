@@ -1,6 +1,5 @@
 import requests
 
-
 # API URL
 not_valid_url = 'https://www.youtube.com/qxje'
 
